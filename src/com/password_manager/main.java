@@ -7,5 +7,5 @@ public class main{
     public static void main(String[] args) {
     password.write_to_txt_timestamp();
     password.write_to_txt_WUP();
-
+    encryptor.encrypted();
 }}
