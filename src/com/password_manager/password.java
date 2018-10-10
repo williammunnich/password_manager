@@ -39,6 +39,7 @@ public class password {
         String username = userInput.nextLine();
         System.out.println("password:");
         String password = userInput.nextLine();
+        System.out.println("Password: " + encryptor.encrypted(password));
         try
     {
         String filename= "passwords.txt";
@@ -49,6 +50,7 @@ public class password {
         fw.write("website:"+ website +"\n");//appends the string to the file
         fw.write("username:"+ username +"\n");
         fw.write("password:"+ password +"\n");
+        fw.write("encrypted password: " + encryptor.encrypted(password)  + "\n");
         fw.close();
     }
         catch(IOException ioe)

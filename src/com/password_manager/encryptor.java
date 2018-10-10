@@ -1,12 +1,13 @@
 package com.password_manager;
 
+import java.util.*;
+
 public class encryptor{
 
-    public static void  encrypted(){
-        StringBuffer passWord = new StringBuffer("password1234");
-        System.out.println("Original: " + passWord);
-        int i = 0;
-        for ( i < passWord.length; i++) ;
+    public static StringBuffer encrypted(String x){
+        StringBuffer passWord = new StringBuffer(x);
+
+        for  (int i = 0; i < passWord.length(); i++)
         {
 
             int temp = 0;
@@ -17,7 +18,8 @@ public class encryptor{
 
         }
 
-        System.out.print("Encrypted: " + passWord);
+
+        return passWord;
     }
 
   
