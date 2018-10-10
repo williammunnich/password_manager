@@ -15,7 +15,7 @@ public class password {
             String filename= "passwords.txt";
             FileWriter fw = new FileWriter(filename,true); //the true will append the new data
             fw.write("\n");//appends the string to the file
-            fw.write(timestamp+"");//appends the string to the file
+            fw.write("@@@@@@@@"+timestamp+"@@@@@@@@");//appends the string to the file
             fw.close();
         }
         catch(IOException ioe)
@@ -47,10 +47,10 @@ public class password {
 
         fw.write("\n");//appends the string to the file
 
-        fw.write("website:"+ website +"\n");//appends the string to the file
-        fw.write("username:"+ username +"\n");
+        fw.write("@@@@@@@@website:"+ website +"@@@@@@@@\n");//appends the string to the file
+        fw.write("@@@@@@@@username:"+ username +"@@@@@@@@\n");
         fw.write("password:"+ password +"\n");
-        fw.write("encrypted password: " + encryptor.encrypted(password)  + "\n");
+        fw.write("########encrypted password: " + encryptor.encrypted(password)  + "########\n");
         fw.close();
     }
         catch(IOException ioe)

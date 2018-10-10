@@ -13,7 +13,7 @@ public class timestamp {
 
         //method 1
         Timestamp timestamp = new Timestamp(System.currentTimeMillis());
-        System.out.println(timestamp);
+        System.out.println("@@@@@@@@"+ timestamp +"@@@@@@@@");
 
 
     }

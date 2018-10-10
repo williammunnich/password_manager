@@ -12,7 +12,7 @@ public class encryptor{
 
             int temp = 0;
             temp = (int) passWord.charAt(i);
-            temp = temp * 9;
+            temp = temp * masterkey.masterkeyGive();
             passWord.setCharAt(i, (char) temp);
 
 
