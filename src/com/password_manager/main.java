@@ -10,6 +10,6 @@ public class main{
        password.write_to_txt_timestamp();
        password.write_to_txt_WUP();
         System.out.println(decryptor.decrypted("Ћ΄ΖЋ΄Ζ"));
-        System.out.println(searcher.searcherFound());
+        System.out.println(searcher.searcherFound("password.txt","########" ));
         System.out.println("done");
 }}
