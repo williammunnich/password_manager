@@ -8,12 +8,15 @@ public class searcher {
 
         public static String searcherFound(String fileName,String searchStr) throws FileNotFoundException {
             Scanner scan = new Scanner(new File(fileName));
+            StringBuffer line = "";
             while (scan.hasNext()) {
-                String line = scan.nextLine().toLowerCase().toString();
+                StringBuffer line = scan.nextLine().toLowerCase().toString();
                 if (line.contains(searchStr)) {
                     System.out.println(line);
+                    return line;
                 }
             }
+            return ;
         }
 
     }
