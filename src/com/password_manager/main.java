@@ -11,9 +11,9 @@ public class main{
     public static void main(String[] args) throws FileNotFoundException {
         password.write_to_txt_timestamp();
         password.write_to_txt_WUP();
-        System.out.println(decryptor.decrypted("Ћ΄ΖЋ΄Ζ"));
-        System.out.println(searcher.searcherFound("password.txt","########" ));
-        System.out.println("done");
+        //System.out.println(decryptor.decrypted("Ћ΄ΖЋ΄Ζ"));
+        //System.out.println(searcher.searcherFound("password.txt", "########"));
+        //System.out.println("done");
     }
 
 }
