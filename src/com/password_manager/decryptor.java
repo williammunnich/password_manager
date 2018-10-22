@@ -12,7 +12,6 @@ public class decryptor {
             temp = temp / masterkey.masterkeyGive();
             passWord.setCharAt(i, (char) temp);
 
-
         }
 
         System.out.println(passWord);

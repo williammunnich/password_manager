@@ -8,7 +8,6 @@ import java.util.Date;
 public class timestamp {
 
 
-
     public static void main(String[] args) {
 
         //method 1

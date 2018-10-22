@@ -30,16 +30,13 @@ public class password {
 
 
 
-
     public static void write_to_txt_WUP(){
         Scanner userInput = new Scanner(System.in);
         System.out.println("website:");
         String website = userInput.nextLine();
         System.out.println("username:");
         String username = userInput.nextLine();
-        System.out.println("password:");
-        String password = userInput.nextLine();
-        System.out.println("Password: " + encryptor.encrypted(password));
+
         try
     {
         String filename= "passwords.txt";
@@ -49,13 +46,32 @@ public class password {
 
         fw.write("@@@@@@@@website:"+ website +"@@@@@@@@\n");//appends the string to the file
         fw.write("@@@@@@@@username:"+ username +"@@@@@@@@\n");
+
+        fw.close();
+    }
+        catch(IOException ioe)
+    {
+        System.err.println("IOException: " + ioe.getMessage());
+    }
+    }
+    public static void write_to_password_WUP() {
+        Scanner userInput = new Scanner(System.in);
+        System.out.println("password");
+        String password = userInput.nextLine();
+        System.out.println("Password: " + encryptor.encrypted(password));
+
+        try
+    {
+        String filename = "password2.txt";
+        FileWriter fw = new FileWriter(filename,true); //the true will append the new data
+
         fw.write("password:"+ password +"\n");
         fw.write("########encrypted password: " + encryptor.encrypted(password)  + "########\n");
         fw.close();
     }
         catch(IOException ioe)
     {
-        System.err.println("IOException: " + ioe.getMessage());
+        System.err.println("IOException: "+ ioe.getMessage());
     }
     }
 
