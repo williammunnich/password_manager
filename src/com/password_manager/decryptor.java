@@ -1,7 +1,7 @@
 package com.password_manager;
 
 public class decryptor {
-    public static StringBuffer decrypted(String x){
+    public static StringBuffer decrypted(StringBuffer x){
         StringBuffer passWord = new StringBuffer(x);
 
         for  (int i = 0; i < passWord.length(); i++)
@@ -14,7 +14,6 @@ public class decryptor {
 
         }
 
-        System.out.println(passWord);
         return passWord;
     }
 

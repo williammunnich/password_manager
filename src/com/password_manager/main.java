@@ -10,11 +10,10 @@ public class main{
 
     public static void main(String[] args) throws FileNotFoundException {
         password.write_to_txt_timestamp();
-        password.write_to_txt_WUP();
-        String passcode = password.write_to_password_WUP();
-        encryptor.encrypted(passcode);
-        System.out.println("Password: " + encryptor.encrypted(passcode));
-        //System.out.println(decryptor.decrypted("Ћ΄ΖЋ΄Ζ"));
+        String passcode = password.write_to_txt_WUP();
+        StringBuffer passEncrypted = encryptor.encrypted(passcode);
+        System.out.println("Password: " + passEncrypted);
+        System.out.println("Decrypted Password: " + decryptor.decrypted(passEncrypted));
         //System.out.println(searcher.searcherFound("password.txt", "########"));
         //System.out.println("done");
     }
