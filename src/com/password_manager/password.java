@@ -54,7 +54,7 @@ public class password {
         System.err.println("IOException: " + ioe.getMessage());
     }
     }
-    public static void write_to_password_WUP() {
+    public static String write_to_password_WUP() {
         Scanner userInput = new Scanner(System.in);
         System.out.println("password");
         String password = userInput.nextLine();
@@ -73,6 +73,7 @@ public class password {
     {
         System.err.println("IOException: "+ ioe.getMessage());
     }
+    return password;
     }
 
 }
