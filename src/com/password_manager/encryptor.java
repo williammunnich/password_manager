@@ -1,6 +1,5 @@
 package com.password_manager;
 
-import java.util.*;
 
 public class encryptor{
 
