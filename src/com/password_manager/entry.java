@@ -13,13 +13,16 @@ public class entry {
         Scanner userInput = new Scanner(System.in);
         String response = userInput.nextLine();
             while (response != "Y") {
+
                 if (response.equals("Y")) {
                     System.out.println("Enter your Master Password");
                     StringBuffer PassComp = encryptor.encrypted(userInput.nextLine());
-                    System.out.println(PassComp);
+                    String PassComp1 = PassComp.toString();
+                    String masterKey1 = masterKey.toString();
 
-                    if (PassComp == masterKey) {
+                    if (PassComp1.equals(masterKey1)) {
                         System.out.println("Decrypted Password: " + decryptor.decrypted(passEncrypted));
+                        break;
                     } else {
                         System.out.println("Wrong Password");
 
@@ -29,8 +32,9 @@ public class entry {
                     break;
                 } else {
                     System.out.println("Not a valid response");
+                    System.out.println("Try again, make sure it is Y or N:");
+                    response = userInput.nextLine();
                 }
-                System.out.println("Password: " + passEncrypted);
             }
         }
     }
