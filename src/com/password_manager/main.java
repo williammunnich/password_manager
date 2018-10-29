@@ -9,8 +9,9 @@ public class main{
     private static final SimpleDateFormat sdf = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss");
 
     public static void main(String[] args) throws FileNotFoundException {
-        binaryconvert.toBinary();
-        binaryconvert.fromBinary();
+        //binaryconvert.toBinary();
+        binaryconvert.fromBinary("01100111 01100111");
+
         //password.write_to_txt_timestamp();
         //String passcode = password.write_to_txt_WUP();
         //StringBuffer passEncrypted = encryptor.encrypted(passcode);

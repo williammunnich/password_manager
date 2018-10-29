@@ -24,18 +24,18 @@ public class binaryconvert {
 
     }
 
-    public static void fromBinary(){
-        String s;
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter a string");
-        s = sc.nextLine();
-        for(int index = 0; index < s.length(); index+=9) {
-            String temp = s.substring(index, index+8);
-            int num = Integer.parseInt(temp,2);
-            char letter = (char) num;
-            s = s+letter;
+    public static String fromBinary(String binary)
+    {
+        String s2 = "";
+        char nextChar;
+
+        for(int i = 0; i <= binary.length()-8; i += 9) //this is a little tricky.  we want [0, 7], [9, 16], etc (increment index by 9 if bytes are space-delimited)
+        {
+            nextChar = (char)Integer.parseInt(binary.substring(i, i+8), 2);
+            s2 += nextChar;
         }
-        System.out.print(s);
+        System.out.println(s2);
+        return s2;
     }
 
 }
