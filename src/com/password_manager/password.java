@@ -47,7 +47,6 @@ public class password {
 
         fw.write("@@@@@@@@website:"+ website +"@@@@@@@@\n");//appends the string to the file
         fw.write("@@@@@@@@username:"+ username +"@@@@@@@@\n");
-        fw.write("password:"+ password +"\n");
         fw.write("########encrypted password: " + encryptor.encrypted(password)  + "########\n");
 
         fw.close();
@@ -73,8 +72,7 @@ public class password {
 
             fw.write("\n");//appends the string to the file
 
-            fw.write("@@@@@@@@username:"+ account +"@@@@@@@@\n");
-            fw.write("password:"+ password +"\n");
+            fw.write("@@@@@@@@Account:"+ account +"@@@@@@@@\n");
             fw.write("########encrypted password: " + encryptor.encrypted(password)  + "########\n");
 
             fw.close();

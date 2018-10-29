@@ -11,7 +11,5 @@ public class main{
     public static void main(String[] args) {
         password.write_to_txt_timestamp();
         entry.entries();
-            //System.out.println(searcher.searcherFound("password.txt", "########"));
-            //System.out.println("done");
         }
     }
