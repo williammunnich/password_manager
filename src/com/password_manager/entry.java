@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class entry {
     public static void entries() {
         StringBuffer masterKey = password.MasterPassword();
-        System.out.println(masterKey);
         String passcode = password.write_to_txt_WUP();
         StringBuffer passEncrypted = encryptor.encrypted(passcode);
 
