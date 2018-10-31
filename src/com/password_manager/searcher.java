@@ -4,6 +4,8 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
+//suppose to search through txt file but not completed
+
 public class searcher {
 
         public static String searcherFound(String fileName,String searchStr) throws FileNotFoundException {

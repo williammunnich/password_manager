@@ -8,7 +8,7 @@ import java.text.SimpleDateFormat;
 public class password {
     private static final SimpleDateFormat sdf = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss");
     public static void write_to_txt_timestamp(){
-            Timestamp timestamp = new Timestamp(System.currentTimeMillis());
+            Timestamp timestamp = new Timestamp(System.currentTimeMillis()); //current time usimg format above
         try
         {
             String filename= "passwords.txt";
@@ -19,7 +19,7 @@ public class password {
         }
         catch(IOException ioe)
         {
-            System.err.println("IOException: " + ioe.getMessage());
+            System.err.println("IOException: " + ioe.getMessage()); //catches exception
         }
     }
 
@@ -30,13 +30,13 @@ public class password {
 
 
     public static String write_to_txt_WUP(){
-        Scanner userInput = new Scanner(System.in);
-        System.out.println("website:");
-        String website = userInput.nextLine();
-        System.out.println("username:");
-        String username = userInput.nextLine();
-        System.out.println("password");
-        String password = userInput.nextLine();
+        Scanner userInput = new Scanner(System.in); //set up scanner for user input
+        System.out.println("website:"); //ask for user input
+        String website = userInput.nextLine();//take user input
+        System.out.println("username:");//ask for user input
+        String username = userInput.nextLine();//take user input
+        System.out.println("password");//ask for user input
+        String password = userInput.nextLine();//take user input
 
         try
     {
