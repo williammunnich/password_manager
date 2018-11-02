@@ -3,11 +3,30 @@ package com.password_manager;
 import java.util.Scanner;
 
 public class binaryconvert {
-    public static void toBinary(){
+    public static String userinputString(){
+        String s ;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter an ascii string for conversion to a binary string");
+        s = sc.nextLine();
+        s = toBinary(s);
+        return s;
+    }
+
+    public static String userinputBinary(){
         String s;
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter a string");
+        System.out.println("Enter a binary string for conversion to an ascii string");
         s = sc.nextLine();
+        s = fromBinary(s);
+        return s;
+    }
+
+    public static String toBinary(String x){
+        String s;
+        //Scanner sc = new Scanner(System.in);
+        //System.out.println("Enter a string");
+        //s = sc.nextLine();
+        s= x;
         byte[] bytes = s.getBytes();
         StringBuilder binary = new StringBuilder();
         for (byte b : bytes)
@@ -21,7 +40,7 @@ public class binaryconvert {
             binary.append(' ');
         }
         System.out.println("'" + s + "' to binary: " + binary);
-
+        return s;
     }
 
     public static String fromBinary(String binary)

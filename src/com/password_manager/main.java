@@ -4,13 +4,17 @@ package com.password_manager;
         import java.lang.*;
 
         import java.text.SimpleDateFormat;
+        import java.util.Scanner;
 
 public class main{
     private static final SimpleDateFormat sdf = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss");
 
     public static void main(String[] args) throws FileNotFoundException {
-        binaryconvert.toBinary();
-        binaryconvert.fromBinary("01100111 01100111");
+
+        binaryconvert.userinputString();
+
+
+        binaryconvert.userinputBinary();
         //binaryconvert.fromBinary(binaryconvert.toBinary());
         //password.write_to_txt_timestamp();
         //String passcode = password.write_to_txt_WUP();
