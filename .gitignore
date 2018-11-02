@@ -36,3 +36,7 @@ bin
 *.swp
 *.bak
 *.txt
+
+# Special
+passwords.txt
+masterPasswords.txt
