@@ -16,11 +16,11 @@ public class easteregg{//declares class
     {
 
 
-        File f = new File ("C:\\Users\\wmun1901\\Documents\\GitHub\\password_manager\\src\\com\\password_manager\\chawles.bmp");//defines file path for image
+        String f = new File("../password_manager/chawles2.bmp").getCanonicalPath();//defines file path for image
+        File f2 = new File(f);
         Desktop d = Desktop.getDesktop();//creates a new desktop filler
-        d.open(f);//opens file
-        System.out.println("imageviewer open;");//lets user know imageviewer open
-
+        d.open(f2);//opens file
+        System.out.println("imageviewer open;");  //lets user know imageviewer open
 
 
     }
