@@ -11,6 +11,6 @@ public class main{
     public static void main(String[] args) throws Exception {
         password.write_to_txt_timestamp(); //Creates a timestamp pn th text file
         entry.entries(); //Runs everything in use
-        easteregg.pic();
+        easteregg.pic(); //Runs the easter egg
         }
     }
