@@ -1,0 +1,7 @@
+encrypt (m^e)*mod(n) = c
+decrypt (c^d)*mod(n) = m
+so (((m^e)*mod(n))^d)*mod(n) m
+
+public key (e, n)
+private key (d)
+plain text (m)

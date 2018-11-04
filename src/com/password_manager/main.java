@@ -10,11 +10,24 @@ public class main{
     private static final SimpleDateFormat sdf = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss");
 
     public static void main(String[] args) throws FileNotFoundException {
+        long result = Math.pow(42, 17);
+        float x = (float)result;
+        x = x%3233;
+        System.out.println(x);
 
-        binaryconvert.userinputString();
+        result = Math.pow(x, 2753);
+        x = (float)result;
+        System.out.println(x);
+        x= x%2753;
+        System.out.println(x);
 
 
-        binaryconvert.userinputBinary();
+
+
+        //everyeighth.deleteeigth(binaryconvert.userinputString());
+       //everyeighth.addeigth(binaryconvert.userinputBinary());
+
+        //binaryconvert.userinputBinary();
         //binaryconvert.fromBinary(binaryconvert.toBinary());
         //password.write_to_txt_timestamp();
         //String passcode = password.write_to_txt_WUP();
